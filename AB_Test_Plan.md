@@ -31,7 +31,7 @@ Objectif du test : Valider si une campagne promotionnelle ciblée sur la catégo
 | **Groupe A — Contrôle** | Transactions Packaging Materials sans promotion | Aucun campagne |
 | **Groupe B — Traitement** | Transactions Packaging Materials ciblées | Campagne promotionnelle activée |
 
-**Méthode d'assignation :** Randomisation aléatoire simple parmi les clients VIP actifs (ayant effectué ≥1 achat dans les 3 derniers mois).
+**Méthode d'assignation :** Sélection aléatoire de transactions sur la période test parmi la catégorie Packaging Materials.
 
 ### Taille d'échantillon
 

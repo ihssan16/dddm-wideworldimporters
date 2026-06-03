@@ -29,7 +29,7 @@ Objectif du test : Valider si une campagne promotionnelle ciblée sur la catégo
 | Groupe | Description | Traitement |
 |--------|-------------|------------|
 | **Groupe A — Contrôle** | Transactions Packaging Materials sans promotion | Aucun campagne |
-| **Groupe B — Traitement** | Clients VIP sélectionnés | Programme fidélité activé : remises personnalisées + account manager |
+| **Groupe B — Traitement** | Transactions Packaging Materials ciblées | Campagne promotionnelle activée |
 
 **Méthode d'assignation :** Randomisation aléatoire simple parmi les clients VIP actifs (ayant effectué ≥1 achat dans les 3 derniers mois).
 
@@ -37,12 +37,13 @@ Objectif du test : Valider si une campagne promotionnelle ciblée sur la catégo
 
 Calcul basé sur :
 - Effet minimum détectable : +10% de CA moyen
-- Écart-type estimé : basé sur les données historiques du DW
+- Écart-type estimé : basé sur les données historiques de ventes
 - Puissance : 80% | Niveau de signification : 5%
 
 **→ Taille minimale requise : 50 clients par groupe (100 clients au total)**
 
-*Note : Le segment VIP compte ~150 clients actifs dans le DW, ce qui permet l'assignation de 50 par groupe.*
+*Note : *
+La catégorie Packaging Materials représente le volume suffisant pour l'assignation*
 
 ---
 
@@ -81,9 +82,9 @@ Calcul basé sur :
 
 | Résultat | Décision |
 |----------|----------|
-| p-value < 0.05 **ET** augmentation CA ≥ 10% | ✅ **DÉPLOYER** le programme à tous les clients VIP |
-| p-value < 0.05 **MAIS** augmentation CA < 10% | ⚠️ **AJUSTER** le programme — effet insuffisant pour le ROI |
-| p-value ≥ 0.05 | ❌ **NE PAS DÉPLOYER** — effet non prouvé statistiquement |
+| p-value < 0.05 **ET** augmentation CA ≥ 10% | ✅ **DÉPLOYER**  la campagne sur toute la catégorie |
+| p-value < 0.05 **MAIS** augmentation CA < 10% | ⚠️ **AJUSTER** AJUSTER la campagne — effet insuffisant |
+| p-value ≥ 0.05 | ❌ **NE PAS DÉPLOYER** — effet non prouvé  |
 
 ---
 
@@ -93,19 +94,19 @@ Calcul basé sur :
 |--------|-------------|------------|
 | Contamination entre groupes | Faible | Assignation stricte, pas de communication croisée |
 | Biais de saisonnalité | Moyen | Durée de 3 mois couvrant plusieurs périodes |
-| Taille d'échantillon insuffisante | Faible | 150 clients VIP disponibles > 100 requis |
+| Taille d'échantillon insuffisante | Faible | Taille d'échantillon insuffisante — volume de transactions Packaging Materials suffisant |
 | Abandon du programme par les clients | Faible | Suivi mensuel, ajustements possibles sans rompre le protocole |
 
 ---
 
 ## 8. Impact Financier Attendu
 
-D'après le Business Case calculé dans le notebook :
+D'après l'analyse exploratoire des données de ventes :
 
-- **CA Total historique** : voir notebook section 12
-- **Gain estimé (Rec. 1 — Fidélisation VIP)** : +2% du CA total
-- **Coût estimé du programme** : remises ≤5% + 1 account manager
-- **ROI estimé** : positif dès le 2ème mois si augmentation ≥ 10% confirmée
+- CA moyen Packaging Materials : 1 452 USD par transaction
+- Gain estimé si +10% : +145 USD par transaction
+- Sur le volume historique de la catégorie, l'impact annuel estimé est significatif
+- ROI positif dès le 2ème mois si l'augmentation de 10% est confirmée
 
 ---
 

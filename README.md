@@ -1,5 +1,5 @@
 # 📊 Projet Data-Driven Decision Making
-## Wide World Importers — Système d'Aide à la Décision
+## Wide World Importers — Analyse Décisionnelle & Prévision des Ventes
 
 
 
@@ -42,10 +42,9 @@ Projet_DW/
 
 | Source | Description | Volume |
 |--------|-------------|--------|
-| `WideWorldImporters` (SQL Server) | Base OLTP source — transactions de ventes | ~228 000 lignes |
-| `WideWorldImporters_DW` (SQL Server) | Data Warehouse cible — dimensions + faits | 5 tables |
-
-**Fichier de restauration :** `WideWorldImporters_DW.bak`
+| `fact_ventes.csv` | Transactions de ventes historiques | 228 264 lignes |
+| `dim_client.csv` | Données clients et segmentation | 662 lignes |
+| `dim_produit.csv` | Catalogue produits et catégories | 226 lignes |
 
 ---
 
@@ -134,7 +133,9 @@ Le fichier `prdwh.pbix` contient un dashboard interactif avec :
 ## 👥 Équipe
 
 Projet réalisé dans le cadre du module **Data-Driven Decision Making**  
-École : ENSIAS / Filière : GL & GD — 2ème année
+École : ENSIAS 
+Projet réalisé par : Anas el midaoui & Ihssan ben labsir
+Module : Data-Driven Decision Making
 
 ---
 

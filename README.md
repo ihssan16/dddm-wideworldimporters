@@ -33,6 +33,7 @@ Projet_DW/
 ├── dim_produit.csv      ← Export Dim_Produit (227 produits)
 ├── fact_ventes.csv      ← Export Fact_Ventes (228 000+ transactions)
 │
+├── olist_order_items_dataset.csv  ← Source 2 : Kaggle Olist E-commerce Dataset
 └── prdwh.pbix           ← Dashboard Power BI interactif
 ```
 
@@ -45,6 +46,7 @@ Projet_DW/
 | `fact_ventes.csv` | Transactions de ventes historiques | 228 264 lignes |
 | `dim_client.csv` | Données clients et segmentation | 662 lignes |
 | `dim_produit.csv` | Catalogue produits et catégories | 226 lignes |
+| `olist_order_items_dataset.csv` | Transactions e-commerce brésilien — Kaggle | 112 650 lignes |
 
 ---
 

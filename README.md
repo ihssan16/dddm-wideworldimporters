@@ -1,7 +1,7 @@
 # 📊 Projet Data-Driven Decision Making
 ## Wide World Importers — Système d'Aide à la Décision
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange) ![PowerBI](https://img.shields.io/badge/Dashboard-Power%20BI-yellow)
+
 
 ---
 
@@ -134,7 +134,7 @@ Le fichier `prdwh.pbix` contient un dashboard interactif avec :
 ## 👥 Équipe
 
 Projet réalisé dans le cadre du module **Data-Driven Decision Making**  
-École : ISGA / Filière : GL & GD — 2ème année
+École : ENSIAS / Filière : GL & GD — 2ème année
 
 ---
 

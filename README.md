@@ -66,24 +66,14 @@ cd dddm-wideworldimporters/Projet_DW
 pip install -r requirements.txt
 ```
 
-### 3. Restaurer la base de données
-Dans SQL Server Management Studio :
-- Clic droit sur **Databases** → *Restore Database*
-- Sélectionner `WideWorldImporters_DW.bak`
-- Restaurer sous le nom `WideWorldImporters_DW`
 
-### 4. Lancer le pipeline ETL
-```bash
-python main.py
-```
-
-### 5. Lancer le Notebook Jupyter
+### 3. Lancer le Notebook Jupyter
 ```bash
 jupyter notebook DDDM_Analyse_WideWorldImporters.ipynb
 ```
 Puis : **Kernel → Restart Kernel and Run All Cells**
 
-### 6. Ouvrir le Dashboard Power BI
+### 4. Ouvrir le Dashboard Power BI
 Ouvrir `prdwh.pbix` avec Power BI Desktop.
 
 ---
@@ -123,7 +113,7 @@ Ouvrir `prdwh.pbix` avec Power BI Desktop.
 
 Le fichier `prdwh.pbix` contient un dashboard interactif avec :
 - Vue **Direction** : KPIs globaux (CA, Marge, Croissance)
-- Vue **Ventes par Segment** : Standard / Premium / VIP
+- Vue **Ventes par Segment** : Standard (segmentation issue du clustering K-Means)
 - Vue **Performance Produits** : CA et marge par catégorie
 - Vue **Tendances Temporelles** : évolution mensuelle
 - Vue **Prévisions IA** : CA prévisionnel 3 mois
@@ -135,7 +125,7 @@ Le fichier `prdwh.pbix` contient un dashboard interactif avec :
 Projet réalisé dans le cadre du module **Data-Driven Decision Making**  
 École : ENSIAS 
 Projet réalisé par : Anas el midaoui & Ihssan ben labsir
-Module : Data-Driven Decision Making
+
 
 ---
 

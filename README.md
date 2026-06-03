@@ -1,7 +1,7 @@
 # 📊 Projet Data-Driven Decision Making
-## Wide World Importers — Système d'Aide à la Décision
+## Wide World Importers — Analyse Décisionnelle & Prévision des Ventes
 
-![Python](https://img.shields.io/badge/Python-3.10+-blue) ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-orange) ![PowerBI](https://img.shields.io/badge/Dashboard-Power%20BI-yellow)
+
 
 ---
 
@@ -33,6 +33,7 @@ Projet_DW/
 ├── dim_produit.csv      ← Export Dim_Produit (227 produits)
 ├── fact_ventes.csv      ← Export Fact_Ventes (228 000+ transactions)
 │
+├── olist_order_items_dataset.csv  ← Source 2 : Kaggle Olist E-commerce Dataset
 └── prdwh.pbix           ← Dashboard Power BI interactif
 ```
 
@@ -42,10 +43,10 @@ Projet_DW/
 
 | Source | Description | Volume |
 |--------|-------------|--------|
-| `WideWorldImporters` (SQL Server) | Base OLTP source — transactions de ventes | ~228 000 lignes |
-| `WideWorldImporters_DW` (SQL Server) | Data Warehouse cible — dimensions + faits | 5 tables |
-
-**Fichier de restauration :** `WideWorldImporters_DW.bak`
+| `fact_ventes.csv` | Transactions de ventes historiques | 228 264 lignes |
+| `dim_client.csv` | Données clients et segmentation | 662 lignes |
+| `dim_produit.csv` | Catalogue produits et catégories | 226 lignes |
+| `olist_order_items_dataset.csv` | Transactions e-commerce brésilien — Kaggle | 112 650 lignes |
 
 ---
 
@@ -67,24 +68,14 @@ cd dddm-wideworldimporters/Projet_DW
 pip install -r requirements.txt
 ```
 
-### 3. Restaurer la base de données
-Dans SQL Server Management Studio :
-- Clic droit sur **Databases** → *Restore Database*
-- Sélectionner `WideWorldImporters_DW.bak`
-- Restaurer sous le nom `WideWorldImporters_DW`
 
-### 4. Lancer le pipeline ETL
-```bash
-python main.py
-```
-
-### 5. Lancer le Notebook Jupyter
+### 3. Lancer le Notebook Jupyter
 ```bash
 jupyter notebook DDDM_Analyse_WideWorldImporters.ipynb
 ```
 Puis : **Kernel → Restart Kernel and Run All Cells**
 
-### 6. Ouvrir le Dashboard Power BI
+### 4. Ouvrir le Dashboard Power BI
 Ouvrir `prdwh.pbix` avec Power BI Desktop.
 
 ---
@@ -124,7 +115,7 @@ Ouvrir `prdwh.pbix` avec Power BI Desktop.
 
 Le fichier `prdwh.pbix` contient un dashboard interactif avec :
 - Vue **Direction** : KPIs globaux (CA, Marge, Croissance)
-- Vue **Ventes par Segment** : Standard / Premium / VIP
+- Vue **Ventes par Segment** : Standard (segmentation issue du clustering K-Means)
 - Vue **Performance Produits** : CA et marge par catégorie
 - Vue **Tendances Temporelles** : évolution mensuelle
 - Vue **Prévisions IA** : CA prévisionnel 3 mois
@@ -134,7 +125,9 @@ Le fichier `prdwh.pbix` contient un dashboard interactif avec :
 ## 👥 Équipe
 
 Projet réalisé dans le cadre du module **Data-Driven Decision Making**  
-École : ISGA / Filière : GL & GD — 2ème année
+École : ENSIAS 
+Projet réalisé par : Anas el midaoui & Ihssan ben labsir
+
 
 ---
 

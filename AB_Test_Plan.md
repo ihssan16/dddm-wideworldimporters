@@ -82,8 +82,8 @@ La catégorie Packaging Materials représente le volume suffisant pour l'assigna
 
 | Résultat | Décision |
 |----------|----------|
-| p-value < 0.05 **ET** augmentation CA ≥ 10% | ✅ **DÉPLOYER**  la campagne sur toute la catégorie |
-| p-value < 0.05 **MAIS** augmentation CA < 10% | ⚠️ **AJUSTER** AJUSTER la campagne — effet insuffisant |
+| p-value < 0.05 **ET** augmentation CA ≥ 10% | ✅ **DÉPLOYER** la campagne sur toute la catégorie |
+| p-value < 0.05 **MAIS** augmentation CA < 10% | ⚠️ **AJUSTER** la campagne — effet insuffisant |
 | p-value ≥ 0.05 | ❌ **NE PAS DÉPLOYER** — effet non prouvé  |
 
 ---
@@ -94,7 +94,7 @@ La catégorie Packaging Materials représente le volume suffisant pour l'assigna
 |--------|-------------|------------|
 | Contamination entre groupes | Faible | Assignation stricte, pas de communication croisée |
 | Biais de saisonnalité | Moyen | Durée de 3 mois couvrant plusieurs périodes |
-| Taille d'échantillon insuffisante | Faible | Taille d'échantillon insuffisante — volume de transactions Packaging Materials suffisant |
+| Taille d'échantillon insuffisante | Faible | Taille d'échantillon insuffisante — volume de transactions Packaging Materials suffisant pour l'assignation|
 | Abandon du programme par les clients | Faible | Suivi mensuel, ajustements possibles sans rompre le protocole |
 
 ---

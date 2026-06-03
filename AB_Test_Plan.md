@@ -5,9 +5,8 @@
 
 ## 1. Contexte & Objectif
 
-L'analyse du Data Warehouse WideWorldImporters révèle que les clients du segment **VIP** génèrent un chiffre d'affaires moyen par transaction significativement supérieur aux autres segments (confirmé par T-test, p < 0.05). Cependant, ce segment reste sous-exploité en termes de rétention et de fréquence d'achat.
-
-**Objectif du test :** Valider si la mise en place d'un **programme de fidélité dédié aux clients VIP** (remises personnalisées, account manager dédié, offres exclusives) augmente significativement leur chiffre d'affaires moyen mensuel.
+L'analyse exploratoire des données de ventes Wide World Importers révèle que la catégorie Packaging Materials génère un CA moyen de 1 452 USD par transaction, soit presque 4 fois plus que la catégorie Novelty Items (396 USD), une différence confirmée statistiquement par T-test (t = 116.69, p < 0.0001).
+Objectif du test : Valider si une campagne promotionnelle ciblée sur la catégorie Packaging Materials augmente significativement le CA moyen par transaction de cette catégorie.
 
 ---
 
@@ -15,8 +14,8 @@ L'analyse du Data Warehouse WideWorldImporters révèle que les clients du segme
 
 | | Énoncé |
 |---|---|
-| **H₀ (nulle)** | Le programme de fidélité ne modifie pas le CA moyen mensuel des clients VIP : μ_B = μ_A |
-| **H₁ (alternative)** | Le programme de fidélité augmente le CA moyen mensuel des clients VIP d'au moins 10% : μ_B ≥ 1.10 × μ_A |
+| **H₀ (nulle)** | La campagne ne modifie pas le CA moyen par transaction Packaging Materials : μ_B = μ_A |
+| **H₁ (alternative)** | La campagne augmente le CA moyen par transaction d'au moins 10% : μ_B ≥ 1.10 × μ_A |
 
 **Type de test :** T-test bilatéral de Student (Welch) — α = 0.05  
 **Puissance statistique cible :** β = 0.80 (80%)
@@ -29,7 +28,7 @@ L'analyse du Data Warehouse WideWorldImporters révèle que les clients du segme
 
 | Groupe | Description | Traitement |
 |--------|-------------|------------|
-| **Groupe A — Contrôle** | Clients VIP sans changement | Aucun programme fidélité |
+| **Groupe A — Contrôle** | Transactions Packaging Materials sans promotion | Aucun campagne |
 | **Groupe B — Traitement** | Clients VIP sélectionnés | Programme fidélité activé : remises personnalisées + account manager |
 
 **Méthode d'assignation :** Randomisation aléatoire simple parmi les clients VIP actifs (ayant effectué ≥1 achat dans les 3 derniers mois).
@@ -111,4 +110,4 @@ D'après le Business Case calculé dans le notebook :
 ---
 
 *Document rédigé dans le cadre du projet Data-Driven Decision Making*  
-*Module DDDM — Filière GL & GD 2A | Date : Juin 2026*
+*Module DDDM —anas el midaoui & ihssan ben labsir| Date : Juin 2026*

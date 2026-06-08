@@ -115,11 +115,11 @@ Ouvrir `prdwh.pbix` avec Power BI Desktop.
 
 Le fichier `prdwh.pbix` contient un dashboard interactif 5 pages :
 
-* **GLOBAL** (Vue Direction) : évolution CA et marge 2013-2016, top 10 produits les plus vendus, top 5 villes par CA, KPIs globaux (172.26M CA / 85.73M Marge)
-* **ANALYSE CLIENT** (Vue Marketing) : répartition CA par catégorie client, ventes par groupe d'achat (Tailspin Toys / Wingtip Toys / Indépendant), top 10 clients par marge brute, 663 clients actifs
-* **Analyse des produits** (Vue Opérations) : top produits par quantité vendue, marge par produit, CA par produit, répartition CA par catégorie (Packaging 58.44%), évolution des ventes et rentabilité
-* **Analyse Financière** (Vue Direction) : KPIs CA Total (172.26M) / Marge Totale (85.73M) / Taux de Marge (49.77%), CA par année, évolution CA vs Marge, répartition de la marge par catégorie
-* **Prévisions & Décision** (Vue Stratégique) : recommandations actionnables, CA et marge par catégorie, synthèse modèle Random Forest (R²=0.82 K-Fold k=5), plan A/B Test Packaging Materials
+* **GLOBAL (Vue Direction)** : évolution CA et marge 2013-2016, top 10 produits les plus vendus, top 5 villes par CA, KPIs globaux (172.26M CA / 85.73M Marge)
+* **ANALYSE CLIENT (Vue Marketing)** : répartition CA par catégorie client, ventes par groupe d'achat (Tailspin Toys / Wingtip Toys / Indépendant), top 10 clients par marge brute, 663 clients actifs
+* **Analyse des produits (Vue Opérations)** : top produits par quantité vendue, marge par produit, CA par produit, répartition CA par catégorie (Packaging 58.44%), évolution des ventes et rentabilité
+* **Analyse Financière (Vue Direction)**: KPIs CA Total (172.26M) / Marge Totale (85.73M) / Taux de Marge (49.77%), CA par année, évolution CA vs Marge, répartition de la marge par catégorie
+* **Prévisions & Décision (Vue Stratégique)**: recommandations actionnables, CA et marge par catégorie, synthèse modèle Random Forest (R²=0.82 K-Fold k=5), plan A/B Test Packaging Materials
 ---
 
 ## 👥 Équipe
